@@ -50,18 +50,20 @@
   }
 
   .nav-logo-circle {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    background: var(--gold);
+    overflow: hidden;
+    background: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-size: 13px;
-    color: var(--navy);
-    letter-spacing: 0.5px;
+  }
+
+  .nav-logo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   .nav-logo-text {
@@ -527,7 +529,7 @@
 <!-- NAV -->
 <nav>
   <div class="nav-logo">
-    <div class="nav-logo-circle">CBBL</div>
+    <div class="nav-logo-circle"><img src="logo-cbbl.png" alt="Logo CBBL"></div>
     <div class="nav-logo-text">
       Centre Biblique Bon Leader
       <span>2 Timothée 2:2</span>
@@ -635,6 +637,22 @@
       <div class="cours-name">Formation à distance</div>
       <div class="cours-detail">Tous les samedis et lundis de chaque semaine. Accessible depuis partout.</div>
       <div class="cours-time">19h00</div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIE -->
+<section id="galerie" style="background: var(--off-white);">
+  <div class="section-label">Galerie</div>
+  <div class="section-title">Nos anciens étudiants</div>
+  <div class="section-sub">Des hommes et femmes formés pour servir Dieu avec excellence.</div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 40px;">
+    <div style="border-radius: 8px; overflow: hidden; aspect-ratio: 4/3;">
+      <img src="photo-etudiants.jpg" alt="Remise de diplômes CBBL" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <div style="border-radius: 8px; overflow: hidden; aspect-ratio: 4/3;">
+      <img src="photo-promo.jpg" alt="Centre Biblique Bon Leader" style="width: 100%; height: 100%; object-fit: cover;">
     </div>
   </div>
 </section>
